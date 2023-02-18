@@ -1,12 +1,16 @@
 import React from 'react';
-import './App.scss';
+import './styles/App.scss';
+import { Routes, Route } from 'react-router-dom';
+import Login from './pages/login';
+import Dashboard from './pages/dashboard';
 
 function App() {
-  return (
-    <div className="App">
-      Starting now father
-    </div>
-  );
+    return (
+        <Routes>
+            <Route path='/' element={<Login />} />
+            <Route path='/dashboard' element={<Dashboard />} />
+        </Routes>
+    );
 }
 
 export default App;
