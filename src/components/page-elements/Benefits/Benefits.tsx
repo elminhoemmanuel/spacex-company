@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import { benefits } from '../../../data'
-import styles from "./benefits.module.scss"
+import React, { useState } from "react";
+import { benefits } from "../../../data";
+import styles from "./benefits.module.scss";
 
 const Benefits = () => {
     const [active, setActive] = useState(3)
@@ -20,7 +20,7 @@ const Benefits = () => {
                         key={benefit.id} 
                         className={getBenefitStyle(benefit.id)} 
                     >
-                        <div><img src={benefit.img} alt='Benefit icon' /></div>
+                        <div><img src={benefit.img} alt="Benefit icon" /></div>
                         <div className={styles.textBox}>
                             <div>
                                 <p className={styles.title}>{benefit.title}</p>
@@ -28,7 +28,7 @@ const Benefits = () => {
                             </div>
                             {
                                 <div style={{visibility: `${handleShowCheck(benefit.id) ? "visible" : "hidden"}`}} >
-                                    <img src={benefit.checkedIcon} alt='check icon' />
+                                    <img src={benefit.checkedIcon} alt="check icon" />
                                 </div>
                             }
                         </div>

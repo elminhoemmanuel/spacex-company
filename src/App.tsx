@@ -1,14 +1,13 @@
-import React from 'react';
-import './styles/App.scss';
-import { Routes, Route } from 'react-router-dom';
-import Login from './pages/login';
-import Dashboard from './pages/dashboard';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Login from "./pages/Login/Login";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {
     return (
         <Routes>
-            <Route path='/' element={<Login />} />
-            <Route path='/dashboard' element={<Dashboard />} />
+            <Route path="/" element={<Login />} />
+            <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
     );
 }

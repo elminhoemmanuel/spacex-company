@@ -1,6 +1,6 @@
-import { IBenefits } from "../interfaces/layout";
+import { BenefitsProps } from "../interfaces/layout";
 
-export const benefits:IBenefits[] = [
+export const benefits:BenefitsProps[] = [
     {
         id: 1,
         img: "./images/benefit1.svg",

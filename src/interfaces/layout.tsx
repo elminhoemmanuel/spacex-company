@@ -1,8 +1,8 @@
-export interface ILayout {
+export type LayoutProps = {
     children: React.ReactNode
 }
 
-export interface IBenefits {
+export type BenefitsProps = {
     id: number;
     img: string;
     title: string;

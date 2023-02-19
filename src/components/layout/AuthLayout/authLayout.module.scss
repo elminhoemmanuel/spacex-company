@@ -1,5 +1,5 @@
-@import "../../../styles/mixins";
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 
 .container {
@@ -11,10 +11,6 @@
     .left {
         width: 42%;
         padding: 2rem 3rem;
-
-        .logo {
-            @include logo-style;
-        }
 
         .header {
             font-weight: bold;  
@@ -29,11 +25,22 @@
 
     .right {
         width: 58%;
-        padding: 7rem 5rem;
+        padding: 9rem 5rem;
         background-color: $brandpink;
 
         .logo {
             display: none;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2rem;
+            padding: 3rem 4rem;
+            background-color: #FFFFFF;
+            box-shadow: 0px 4px 25px rgba(102, 102, 102, 0.2);
+            border-radius: $radius;
         }
     }
 }
@@ -58,7 +65,7 @@
         }
 
         .right {
-            padding: 5rem 2.5rem;
+            padding: 7rem 2.5rem;
         }
     }
 }
@@ -74,11 +81,14 @@
 
         .right {
             width: 100%;
-            padding: 1.5rem;
+            padding: 1.5rem 1rem;
 
             .logo {
                 display: block;
-                @include logo-style;
+            }
+
+            .card {
+                padding: 1.5rem;
             }
         }
     }
