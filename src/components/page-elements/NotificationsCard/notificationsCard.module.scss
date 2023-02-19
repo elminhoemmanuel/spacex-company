@@ -1,0 +1,29 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+
+.card {
+    background: #FFFFFF;
+    border: 0.8px solid #EBEBEB;
+    border-radius: 0.625rem;
+    padding: 1.8rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+    .notif {
+        @include flex-horizontal-center;
+        gap: 0.2rem;
+
+        .notifIcon {
+            width: 25%;
+        }
+
+        .notifLoading {
+            width: 70%;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

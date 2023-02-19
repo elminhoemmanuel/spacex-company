@@ -23,3 +23,5 @@ export const benefits:BenefitsProps[] = [
         checkedIcon: "./images/check3.svg"
     },
 ]
+
+export const notifications:string[] = ["/images/notif1.svg", "/images/notif2.svg", "/images/notif3.svg"] 

@@ -1,0 +1,17 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+
+.badge {
+    @include flex-horizontal-center;
+    padding: 0rem 2rem;
+    border-radius: 1.875rem;
+    background: #FEEBEE;
+    color: #E60A2B;
+    gap: 0.4rem;
+    width: max-content;
+
+    img {
+        margin-top: 0.2rem;
+    }
+}
