@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
-body {
+html, body {
   margin: 0;
   padding: 0;
   font-family: 'Manrope', sans-serif;
@@ -7,4 +7,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   position: relative;
+}
+
+// Media queries
+// MQ for extra large screens responsive display
+@media only screen and (min-width: 1536px) {
+    body {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
 }

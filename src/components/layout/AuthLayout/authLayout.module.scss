@@ -1,0 +1,85 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    @include font($textnormal, $normaltext);
+
+    .left {
+        width: 42%;
+        padding: 2rem 3rem;
+
+        .logo {
+            @include logo-style;
+        }
+
+        .header {
+            font-weight: bold;  
+            @include font($headersize1, $headertext);
+            margin-bottom: 0.3rem;
+        }
+
+        .text {
+            margin-bottom: 3rem;
+        }
+    }
+
+    .right {
+        width: 58%;
+        padding: 7rem 5rem;
+        background-color: $brandpink;
+
+        .logo {
+            display: none;
+        }
+    }
+}
+
+
+// Media queries
+// MQ for extra large screens responsive display
+@media only screen and (min-width: 1536px) {
+    
+}
+
+// MQ for large screens responsive display
+@media only screen and (min-width: 1024px) {
+    
+}
+
+// MQ for medium screens responsive display
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        .left {
+            padding: 2rem 2.5rem;
+        }
+
+        .right {
+            padding: 5rem 2.5rem;
+        }
+    }
+}
+
+// MQ for small screens responsive display
+@media only screen and (max-width: 768px) {
+    .container {
+        .left {
+            display: none;
+            width: 0%;
+            background-color: green;
+        }
+
+        .right {
+            width: 100%;
+            padding: 1.5rem;
+
+            .logo {
+                display: block;
+                @include logo-style;
+            }
+        }
+    }
+}
