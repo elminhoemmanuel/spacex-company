@@ -1,0 +1,95 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    @include font($textnormal, $normaltext);
+
+    .left {
+        width: 42%;
+        padding: 2rem 3rem;
+
+        .header {
+            font-weight: bold;  
+            @include font($headersize1, $headertext);
+            margin-bottom: 0.3rem;
+        }
+
+        .text {
+            margin-bottom: 3rem;
+        }
+    }
+
+    .right {
+        width: 58%;
+        padding: 9rem 5rem;
+        background-color: $brandpink;
+
+        .logo {
+            display: none;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2rem;
+            padding: 3rem 4rem;
+            background-color: #FFFFFF;
+            box-shadow: 0px 4px 25px rgba(102, 102, 102, 0.2);
+            border-radius: $radius;
+        }
+    }
+}
+
+
+// Media queries
+// MQ for extra large screens responsive display
+@media only screen and (min-width: 1536px) {
+    
+}
+
+// MQ for large screens responsive display
+@media only screen and (min-width: 1024px) {
+    
+}
+
+// MQ for medium screens responsive display
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        .left {
+            padding: 2rem 2.5rem;
+        }
+
+        .right {
+            padding: 7rem 2.5rem;
+        }
+    }
+}
+
+// MQ for small screens responsive display
+@media only screen and (max-width: 768px) {
+    .container {
+        .left {
+            display: none;
+            width: 0%;
+            background-color: green;
+        }
+
+        .right {
+            width: 100%;
+            padding: 1.5rem 1rem;
+
+            .logo {
+                display: block;
+            }
+
+            .card {
+                padding: 1.5rem;
+            }
+        }
+    }
+}

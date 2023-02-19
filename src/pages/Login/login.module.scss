@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+
+.headingBox {
+   width: 100%;
+    h3, p {
+        margin: 0;
+    }
+
+    h3 {
+        @include font($headersize2, $headertext);
+        margin-bottom: 0.1rem;
+    }
+}

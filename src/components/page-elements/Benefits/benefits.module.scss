@@ -1,0 +1,28 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+
+.benefit {
+    @include benefit;
+
+    &:hover {
+        background-color: #F8F8F6;
+    }
+    
+    p {
+        margin: 0;
+    }
+}
+
+.activeBenefit {
+    @include benefit;
+    background-color: #F8F8F6;
+
+    .title {
+        color: $headertext;
+    }
+
+    p {
+        margin: 0;
+    }
+}

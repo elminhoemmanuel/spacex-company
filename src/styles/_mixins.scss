@@ -1,0 +1,37 @@
+@mixin flex-center(){
+    display: flex;
+    align-items: center;
+}
+
+@mixin logo-style(){
+    margin-bottom: 0.95rem;
+    margin-left: -0.75rem;
+}
+
+@mixin block(){
+    display: block;
+    width: 100%;
+}
+
+@mixin font($size, $color){
+    font-size: $size;
+    color: $color;
+}
+
+@mixin benefit(){
+    @include flex-center;
+    gap: 1rem;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    margin-bottom: 1.3rem;
+    padding: 0.6rem;
+
+    .description {
+        @include font($textsmall, $lighttext);
+    }
+
+    .textBox {
+        @include flex-center;
+        gap: 1rem;
+    }
+}
