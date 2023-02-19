@@ -4,4 +4,6 @@ export type Info = {
     ceo: string;
 }
 
-export type InfoCardProps = Omit<Info, 'name'>;
+export type InfoData = {
+    company: Info
+}

@@ -1,6 +1,6 @@
 ### Introduction
 
-- The live demo of this project can be found deployed live at [here](https://spacex-company.netlify.app/)
+- The live demo of this project can be found deployed live at [here](https://spacex-company.vercel.app/)
 - A breakdown of the various technologies utilized in the SpaceX - Company project as well as useful documentation.
 
 ## Features

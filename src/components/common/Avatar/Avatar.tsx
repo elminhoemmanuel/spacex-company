@@ -8,7 +8,7 @@ type Props = {
 const Avatar = ({ name }: Props) => {
   return (
     <div className={styles.avatar}>
-        <p>{name || "CN"}</p>
+        <p>{name ? "SX" : "CN"}</p>
     </div>
   )
 }
