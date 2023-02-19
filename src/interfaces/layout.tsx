@@ -1,5 +1,5 @@
 export type LayoutProps = {
-    children: React.ReactNode
+    children: React.ReactNode;
 }
 
 export type BenefitsProps = {

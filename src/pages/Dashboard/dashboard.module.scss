@@ -1,0 +1,17 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+
+.container {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+}
+
+// Media queries
+// MQ for small screens responsive display
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,27 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+
+.headerCard {
+    @include flex-horizontal-center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+
+    h2 {
+        text-transform: uppercase;
+        @include font($headersize2, $headertext);
+    }
+}
+
+
+// Media queries
+// MQ for medium screens responsive display
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+// MQ for small screens responsive display
+@media only screen and (max-width: 768px) {
+    .headerCard {
+        gap: 1rem;
+    }
+}
