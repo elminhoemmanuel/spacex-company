@@ -32,5 +32,6 @@
 
     .textBox {
         @include flex-center;
+        gap: 1rem;
     }
 }
