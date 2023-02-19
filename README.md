@@ -18,7 +18,7 @@ As requested I have been able to;
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [SASS](https://sass-lang.com/)
-- [GraphQL](https://tailwindcss.com/)
+- [GraphQL](https://graphql.org)
 - [Jest](https://jestjs.io/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 

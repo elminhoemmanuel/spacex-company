@@ -1,0 +1,44 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+
+.nav {
+    @include flex-horizontal-center;
+    padding: 0.6rem 3rem;
+    border-bottom: 0.7px solid #DCE2EA;
+
+    .logo {
+        margin-bottom: -0.7rem;
+        margin-left: -0.7rem;
+    }
+}
+
+.holder {
+    padding: 1.5rem 3rem;
+}
+
+
+// Media queries
+// MQ for medium screens responsive display
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .nav {
+        .logo {
+            margin-left: -0.75rem;
+        }
+    }
+    
+}
+
+// MQ for small screens responsive display
+@media only screen and (max-width: 768px) {
+    .nav {
+        padding: 0.6rem 1.5rem;
+    }
+    
+    .holder {
+        padding: 1.5rem 1.5rem;
+    }
+}
+
+
+

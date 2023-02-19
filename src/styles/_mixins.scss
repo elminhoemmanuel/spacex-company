@@ -1,11 +1,17 @@
-@mixin flex-center(){
+@mixin flex-horizontal-center(){
     display: flex;
     align-items: center;
 }
 
+@mixin flex-center(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @mixin logo-style(){
     margin-bottom: 0.95rem;
-    margin-left: -0.75rem;
+    margin-left: -0.65rem;
 }
 
 @mixin block(){
@@ -19,7 +25,7 @@
 }
 
 @mixin benefit(){
-    @include flex-center;
+    @include flex-horizontal-center;
     gap: 1rem;
     border-radius: 1.25rem;
     cursor: pointer;
@@ -31,7 +37,7 @@
     }
 
     .textBox {
-        @include flex-center;
+        @include flex-horizontal-center;
         gap: 1rem;
     }
 }

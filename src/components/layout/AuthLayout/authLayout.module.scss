@@ -21,6 +21,10 @@
         .text {
             margin-bottom: 3rem;
         }
+
+        .logo {
+            @include logo-style;
+        }
     }
 
     .right {
@@ -47,16 +51,6 @@
 
 
 // Media queries
-// MQ for extra large screens responsive display
-@media only screen and (min-width: 1536px) {
-    
-}
-
-// MQ for large screens responsive display
-@media only screen and (min-width: 1024px) {
-    
-}
-
 // MQ for medium screens responsive display
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .container {
@@ -85,6 +79,7 @@
 
             .logo {
                 display: block;
+                @include logo-style;
             }
 
             .card {

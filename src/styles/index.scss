@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+@import "./mixins";
+@import "./variables";
+
 *{
     box-sizing: border-box;
 }
@@ -12,6 +15,7 @@ html, body {
   height: 100%;
   position: relative;
   font-size: 16px;
+  color: $normaltext;
 }
 
 // Media queries

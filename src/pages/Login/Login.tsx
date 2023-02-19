@@ -1,8 +1,8 @@
-import React, { useState } from "react"
-import Button from "../../components/common/Button"
-import Input from "../../components/common/Input"
-import AuthLayout from "../../components/layout/AuthLayout"
-import styles from "./login.module.scss"
+import React, { useState } from "react";
+import Button from "../../components/common/Button";
+import Input from "../../components/common/Input";
+import AuthLayout from "../../components/layout/AuthLayout";
+import styles from "./login.module.scss";
 
 const Login = () => {
 

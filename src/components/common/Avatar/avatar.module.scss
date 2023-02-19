@@ -1,0 +1,15 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+
+.avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 999px;
+    background: $brandpink2;
+    border: 2px solid #FFFFFF;
+    outline: 1px solid #FCB6C0;
+    @include flex-center;
+    color: $brandgreen;
+    font-size: $headersize2;
+}

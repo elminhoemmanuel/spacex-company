@@ -1,0 +1,27 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+
+.container {
+    width: 70%;
+    border: 1px solid #DDE1E3;
+    border-radius: 0.5rem;
+    padding: 2rem 4rem;
+    min-height: 75vh;
+}
+
+// Media queries
+// MQ for medium screens responsive display
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 60%;
+    }
+}
+
+// MQ for small screens responsive display
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 2rem 1.2rem;
+    }
+}

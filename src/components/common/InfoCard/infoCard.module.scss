@@ -1,0 +1,20 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+
+.container {
+    margin-bottom: 2rem;
+    p {
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    .position {
+        margin-bottom: 0.6rem;
+        @include font($textsmall, $lighttext);
+    }
+
+    .name {
+        @include font($textnormal, $headertext);
+    }
+}

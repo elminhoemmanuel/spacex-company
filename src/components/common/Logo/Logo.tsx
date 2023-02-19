@@ -1,6 +1,4 @@
 import React from "react";
-import styles from "./logo.module.scss";
-import clsx from "clsx";
 
 type Props = {
     className?: string;
@@ -8,7 +6,7 @@ type Props = {
 
 const Logo = ({ className }: Props) => {
   return (
-    <div className={clsx([styles.logo, className])}>
+    <div className={className}>
         <img src="./images/logo.png" alt="Company logo" />
     </div>
   )
