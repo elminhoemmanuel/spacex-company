@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+import { AuthProvider } from "./context/Auth";
 
 const client = new ApolloClient({
     uri: 'https://spacex-production.up.railway.app/graphql',
@@ -17,9 +18,11 @@ const root = ReactDOM.createRoot(
 root.render(
     <React.StrictMode>
         <BrowserRouter>
-            <ApolloProvider client={client}>
-                <App />
-            </ApolloProvider>
+            <AuthProvider>
+                <ApolloProvider client={client}>
+                    <App />
+                </ApolloProvider>
+            </AuthProvider>
         </BrowserRouter>
     </React.StrictMode>
 );

@@ -41,3 +41,8 @@
         gap: 1rem;
     }
 }
+
+@mixin error-text(){
+    color: #E60A2B;
+    font-size: $textsmall;
+}
