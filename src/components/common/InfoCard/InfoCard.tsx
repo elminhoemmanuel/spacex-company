@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./infoCard.module.scss"
+import styles from "./infoCard.module.scss";
 
 type Props = {
     name: string;

@@ -22,6 +22,6 @@ export const benefits:BenefitsProps[] = [
         description: "Easily see how much your busineses are earning  on each transaction and watch your earnings rise.",
         checkedIcon: "./images/check3.svg"
     },
-]
+];
 
-export const notifications:string[] = ["/images/notif1.svg", "/images/notif2.svg", "/images/notif3.svg"] 
+export const notifications:string[] = ["/images/notif1.svg", "/images/notif2.svg", "/images/notif3.svg"]; 

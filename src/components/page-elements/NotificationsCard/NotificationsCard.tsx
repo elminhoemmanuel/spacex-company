@@ -1,6 +1,6 @@
 import React from "react";
 import { notifications } from "../../../data";
-import styles from "./notificationsCard.module.scss"
+import styles from "./notificationsCard.module.scss";
 
 
 const NotificationsCard = () => {

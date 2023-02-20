@@ -10,6 +10,8 @@ As requested I have been able to;
 - Build the two screens as requested.
 - Fetch data from the GraphQL endpoint to populate the dashboard.
 - Used React context to handle login and log user out after every 2 minutes.
+
+### Future Improvements I added
 - Added form validation for the login form.
 - Added Tests
 
@@ -21,8 +23,6 @@ As requested I have been able to;
 - [GraphQL](https://graphql.org)
 - [Jest](https://jestjs.io/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
-
-### Future Improvements ( if I had more time )
 
 
 ## How To Use
