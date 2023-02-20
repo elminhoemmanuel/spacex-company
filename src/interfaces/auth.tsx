@@ -1,5 +1,5 @@
 export type AuthContextType = {
-    login: (email: string, password:string)=>void;
+    login: (email: string, password:string)=>string;
     logout: ()=>void;
     isLoggedIn: boolean;
 }

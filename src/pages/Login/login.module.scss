@@ -2,14 +2,25 @@
 @import "../../styles/mixins";
 
 
-.headingBox {
-   width: 100%;
-    h3, p {
-        margin: 0;
-    }
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    .headingBox {
+        width: 100%;
+         h3, p {
+             margin: 0;
+         }
+     
+         h3 {
+             @include font($headersize2, $headertext);
+             margin-bottom: 0.1rem;
+         }
+     }
+}
 
-    h3 {
-        @include font($headersize2, $headertext);
-        margin-bottom: 0.1rem;
-    }
+.loginError {
+    margin: 1rem auto;
+    @include error-text;
 }

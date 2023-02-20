@@ -6,7 +6,7 @@ type AuthProviderProps = {
     children: React.ReactNode
 }
 
-const dummyUserData: UserData = { email: "junior@moneeyapp.com", password: "Moneeyapp." }
+const dummyUserData: UserData = { email: "junior@moneeyapp.com", password: "Moneeyapp4u." }
 
 const AuthProvider = ({ children }: AuthProviderProps) => {
     
@@ -17,7 +17,7 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
             setIsLoggedIn(true);
             return "loggedIn"
         }
-        return "loggedOut"
+        return ""
     }
 
     const logout = ()=> setIsLoggedIn(false);
