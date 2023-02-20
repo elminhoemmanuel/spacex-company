@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { UserData } from "../../interfaces/auth";
+import { removeFromLocalStorage, setToLocalStorage } from "../../utils/localStorage";
 import AuthContext from "./AuthContext";
 
 type AuthProviderProps = {
@@ -9,20 +10,18 @@ type AuthProviderProps = {
 const dummyUserData: UserData = { email: "junior@moneeyapp.com", password: "Moneeyapp4u." }
 
 const AuthProvider = ({ children }: AuthProviderProps) => {
-    
-    const [isLoggedIn, setIsLoggedIn] = useState(false)
 
     const login = (email: string, password:string):string =>{
         if( email === dummyUserData.email && password === dummyUserData.password ){
-            setIsLoggedIn(true);
+            setToLocalStorage("isAuthenticated", email)
             return "loggedIn"
         }
         return ""
     }
 
-    const logout = ()=> setIsLoggedIn(false);
+    const logout = ()=> removeFromLocalStorage("isAuthenticated");
 
-    const AuthContextValue = { login, logout, isLoggedIn }
+    const AuthContextValue = { login, logout }
 
     return (
         <AuthContext.Provider value={AuthContextValue}>{children}</AuthContext.Provider>

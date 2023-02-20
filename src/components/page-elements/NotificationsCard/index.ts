@@ -1,1 +1,1 @@
-export { default } from "./NotificationsCard"
+export { default } from "./NotificationsCard";

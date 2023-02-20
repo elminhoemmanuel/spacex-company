@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./notifsExplainer.module.scss"
+import styles from "./notifsExplainer.module.scss";
 
 
 const NotificationsExplainer = () => {

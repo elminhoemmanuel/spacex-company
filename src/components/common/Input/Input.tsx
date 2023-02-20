@@ -17,7 +17,10 @@ const Input = ({ className, containerClassName, id, label, errorText, endAdornme
         <div className={clsx([styles.container, containerClassName])}>
             {label ? <label htmlFor={id}>{label}</label> : ""}
             <input
-                className={clsx([styles.input, className])}
+                className={clsx({
+                    [styles.input]: !endAdornment,
+                    [styles.inputAdorned]: endAdornment,
+                  }, className)}
                 id={id}
                 {...rest}
             />

@@ -18,7 +18,7 @@
 
     .endAdornment {
         position: absolute;
-        top: 2.5rem;
+        top: 2.8rem;
         right: 0.65rem;
         cursor: pointer;
     }
@@ -26,16 +26,13 @@
 }
 
 .input {
-    padding: 1rem 2.65rem 1rem 1rem ;
-    border-radius: 0.375rem;
-    border: 1px solid $headertext;
-    outline: 0.25rem solid #F0F0F0;
-    @include block;
-    
-    &:focus {
-        outline: 0.25rem solid #F0F0F0;
-        border: 1px solid $brandgreen;
-    }
+    padding: 1.25rem;
+    @include baseinput;
+}
+
+.inputAdorned {
+    padding: 1.25rem 2.65rem 1.25rem 1.25rem ;
+    @include baseinput;
 }
 
 

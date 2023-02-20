@@ -15,7 +15,7 @@ const schema = yup.object({
     email: yup.string().required("Your email is required"),
     password: yup.string().min(6, "Password should be up to 6 characters").matches(
         /^.*(?=.{6,})((?=.*[!@#$%^&*()\-_=+{};:,<.>]){1})(?=.*\d)((?=.*[a-z]){1})((?=.*[A-Z]){1}).*$/,
-        "Password must contain at least 6 characters, one uppercase, one number and one special case character"
+        "Password must contain at least 6 characters, one uppercase, one number and one special case character e.g (.*,?/)"
     ).required("Your password is required"),
 }).required();
 type FormData = yup.InferType<typeof schema>;
