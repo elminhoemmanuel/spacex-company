@@ -8,7 +8,7 @@ const NotificationsCard = () => {
     <div className={styles.card}>
         { notifications?.map((notif)=>(
             <div className={styles.notif} key={notif} >
-                <div className={styles.notifIcon}><img src={notif} alt="notification icon" /></div>
+                <div className={styles.notifIcon}><img data-testid="notification icon" src={notif} alt="notification icon" /></div>
                 <div className={styles.notifLoading}><img src="/images/notifloading.svg" alt="notification loading indicator" /></div>
             </div>
         )) }

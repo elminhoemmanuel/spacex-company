@@ -1,6 +1,7 @@
 import React from "react";
 import clsx from "clsx";
 import styles from "./button.module.scss";
+import Loader from "../Loader";
 
 type PriBtnProps = {
   children: React.ReactNode;
@@ -13,7 +14,7 @@ const PriBtn = ({ children, className, disabled, isLoading, ...rest }: PriBtnPro
 
   return (
     <button disabled={disabled} className={clsx([styles.button, className])} {...rest}>
-      {isLoading ? <p>Loading...</p> : children}
+      {isLoading ? <Loader /> : children}
     </button>
   )
 }
