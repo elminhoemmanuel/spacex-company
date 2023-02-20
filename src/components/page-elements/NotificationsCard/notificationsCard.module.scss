@@ -27,3 +27,22 @@
         }
     }
 }
+
+
+// Media queries
+// MQ for small Ipad screen responsive display particularly
+@media only screen and (min-width: 768px) and (max-width: 769px) {
+    .card {
+        .notif {
+            gap: 0;
+            .notifIcon {
+                width: 15%;
+            }
+    
+            .notifLoading {
+                width: 84%;
+                padding: 1rem;
+            }
+        }
+    }
+}
