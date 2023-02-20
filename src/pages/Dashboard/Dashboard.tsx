@@ -20,7 +20,7 @@ const Dashboard = () => {
         }, (logoutInterval * 1000))
 
         return () => clearInterval(interval);
-    }, [logout])
+    }, [logout, navigate])
 
     return (
         <DashboardLayout>
